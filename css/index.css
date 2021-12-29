@@ -130,13 +130,13 @@ body {
   }
   .container {
     border: none;
-    grid-template-columns: 96px 1fr;
+    grid-template-columns: 86px 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 360px;
   }
 
   .image {
-    margin-left: 16px;
+    margin-left: 10px;
     margin-right: 16px;
   }
 
@@ -152,7 +152,12 @@ body {
     max-width: 264px;
   }
 
-  .content p {
+  .content .wrapper {
+    max-width: inherit;
+  }
+
+  .conten-content {
+    max-width: inherit;
     padding-right: 25px;
   }
 
