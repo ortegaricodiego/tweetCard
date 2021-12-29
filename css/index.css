@@ -95,7 +95,7 @@ body {
   color: white;
 }
 
-.sub-content-content {
+.sub-content-content-desktop {
   font: var(--body1-regular);
   color: var(--grey);
 }
@@ -122,7 +122,7 @@ body {
 .footer-social-likes {
   margin-top: 10px;
 }
-
+/* 
 @media screen and (max-width: 768px) {
   body {
     height: 50vh;
@@ -175,4 +175,4 @@ body {
     width: 92px;
     height: 82.8px;
   }
-}
+} */
