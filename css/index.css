@@ -132,12 +132,22 @@ body {
     border: none;
     grid-template-columns: 86px 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "image	user-acount"
+      "image	content"
+      "image	sub-content"
+      "image	footer";
     width: 360px;
   }
 
   .image {
+    grid-area: image;
     margin-left: 0;
     margin-right: 16px;
+  }
+
+  .user-acount {
+    grid-area: user-acount;
   }
 
   .user-acount .wrapper {
@@ -149,13 +159,15 @@ body {
   }
 
   .content {
-    max-width: 264px;
+    grid-area: content;
   }
 
   .content p {
     white-space: initial;
+    max-width: 264px;
   }
   .sub-content {
+    grid-area: sub-content;
     width: 246px;
     height: 82.8px;
   }
@@ -173,5 +185,9 @@ body {
   .sub-content-image img {
     width: 92px;
     height: 82.8px;
+  }
+
+  .footer {
+    grid-area: footer;
   }
 }
