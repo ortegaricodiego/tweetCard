@@ -160,12 +160,14 @@ body {
 
   .content {
     grid-area: content;
+    display: block;
+    width: 264px;
   }
 
-  .content p {
-    white-space: initial;
-    max-width: 264px;
+  .content a {
+    word-wrap: break-word;
   }
+
   .sub-content {
     grid-area: sub-content;
     width: 246px;
