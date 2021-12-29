@@ -67,6 +67,7 @@ body {
 .content {
   grid-area: content;
   margin-right: 24px;
+  font: var(--body1-regular);
 }
 
 .content a {
@@ -162,6 +163,7 @@ body {
     grid-area: content;
     display: block;
     width: 264px;
+    font: var(--body2-regular);
   }
 
   .content a {
