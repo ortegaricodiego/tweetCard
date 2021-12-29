@@ -130,7 +130,7 @@ body {
   }
   .container {
     border: none;
-    grid-template-columns: 86px 1fr;
+    grid-template-columns: 50px 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     width: 360px;
   }
@@ -157,7 +157,7 @@ body {
   }
 
   .conten-content {
-    max-width: inherit;
+    width: 200;
     padding-right: 25px;
   }
 
