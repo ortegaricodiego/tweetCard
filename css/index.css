@@ -136,7 +136,7 @@ body {
   }
 
   .image {
-    margin-left: 10px;
+    margin-left: 8px;
     margin-right: 16px;
   }
 
@@ -149,19 +149,12 @@ body {
   }
 
   .content {
-    display: block;
     max-width: 264px;
   }
 
-  .content .wrapper {
-    max-width: inherit;
+  .content p {
+    white-space: initial;
   }
-
-  .conten-content {
-    max-width: inherit;
-    padding-right: 25px;
-  }
-
   .sub-content {
     width: 246px;
     height: 82.8px;
