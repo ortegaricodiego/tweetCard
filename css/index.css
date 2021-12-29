@@ -100,6 +100,10 @@ body {
   color: var(--grey);
 }
 
+.sub-content-content-mobile {
+  display: none;
+}
+
 .footer {
   grid-area: footer;
   margin-top: 16px;
@@ -117,4 +121,58 @@ body {
 
 .footer-social-likes {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    height: 50vh;
+    width: 100%;
+  }
+  .container {
+    border: none;
+    grid-template-columns: 96px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 360px;
+  }
+
+  .image {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .user-acount .wrapper {
+    flex-direction: column;
+  }
+
+  .user-acount-username {
+    margin-top: -20px;
+  }
+
+  .content {
+    max-width: 264px;
+  }
+
+  .content p {
+    padding-right: 25px;
+  }
+
+  .sub-content {
+    width: 246px;
+    height: 82.8px;
+  }
+
+  .sub-content-content-mobile {
+    display: block;
+    font: var(--body2-regular);
+    color: var(--grey);
+  }
+
+  .sub-content-content-desktop {
+    display: none;
+  }
+
+  .sub-content-image img {
+    width: 92px;
+    height: 82.8px;
+  }
 }
