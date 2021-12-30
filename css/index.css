@@ -108,22 +108,41 @@ body {
 .footer {
   grid-area: footer;
   margin-top: 16px;
+  overflow: hidden;
 }
 
 .footer .wrapper {
   display: flex;
-  direction: row;
+  flex-direction: row;
 }
 
 .footer-image {
-  margin-right: 8px;
-  align-self: center;
+  width: 100px;
+  height: 100px;
+  margin-top: -20px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png");
+  background-repeat: no-repeat;
 }
 
 .footer-social-likes {
-  margin-top: 10px;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  display: block;
 }
 
+.heart-animation {
+  animation: heart-beat 0.25s steps(28) 1 forwards;
+}
+
+@keyframes heart-beat {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     height: 50vh;
