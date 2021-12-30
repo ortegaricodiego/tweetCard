@@ -11,6 +11,12 @@
   --body2-regular: 400 0.75rem/1.375rem Poppins;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--bg);
   color: var(--white);
@@ -72,6 +78,7 @@ body {
 
 .content a {
   color: var(--blue);
+  cursor: pointer;
 }
 
 .sub-content {
@@ -119,9 +126,10 @@ body {
 .footer-image {
   width: 100px;
   height: 100px;
-  margin-top: -20px;
+  margin-top: -35px;
   background: url("https://cssanimation.rocks/images/posts/steps/heart.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .footer-social-likes {
@@ -175,7 +183,7 @@ body {
   }
 
   .user-acount-username {
-    margin-top: -20px;
+    margin-top: -6px;
   }
 
   .content {
